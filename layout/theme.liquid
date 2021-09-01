@@ -185,6 +185,7 @@
           URL: "{{ shop.secure_url }}{{ product.url }}",
           Brand: {{ product.vendor|json }},
           Price: {{ product.price|money|json }},
+          StarWars: 'wookie',
           CompareAtPrice: {{ product.compare_at_price_max|money|json }}
         };
         _learnq.push(['track', 'Ordered Product', item]);
