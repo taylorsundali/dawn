@@ -33,6 +33,7 @@
         "1630529301e13f132b-2"
       ],
       "settings": {
+        "image": "{{ product.metafields.my_fields.product_header.value }}",
         "desktop_text_box_position": "center",
         "color_scheme": "background-1",
         "stack_images_on_mobile": true,
