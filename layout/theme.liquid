@@ -144,9 +144,6 @@
       }
     </script>
     {% comment %}Klaviyo web tracking for viewed product{% endcomment %}
-    <script>
-      console.log('template suffix: '+{{ page.template_suffix }});
-    </script>
     {% if page.template_suffix == 'product' %}
     <script type="text/javascript">
       var _learnq = _learnq || [];
@@ -177,7 +174,9 @@
       }]);
     </script>
     {% endif %}
-    
+    <script>
+      console.log('template suffix: '+{{ page.template_suffix }});
+    </script>
     
   </body>
 </html>
