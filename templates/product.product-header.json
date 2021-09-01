@@ -1,5 +1,44 @@
 {
   "sections": {
+    "1630529301e13f132b": {
+      "type": "image-banner",
+      "blocks": {
+        "1630529301e13f132b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner"
+          }
+        },
+        "1630529301e13f132b-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "1630529301e13f132b-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1630529301e13f132b-0",
+        "1630529301e13f132b-1",
+        "1630529301e13f132b-2"
+      ],
+      "settings": {
+        "desktop_text_box_position": "center",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -30,6 +69,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
+            "picker_type": "button"
           }
         },
         "quantity_selector": {
@@ -40,6 +80,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
+            "show_dynamic_checkout": true
           }
         },
         "description": {
@@ -65,15 +106,24 @@
         "share"
       ],
       "settings": {
+        "enable_sticky_info": true,
+        "enable_video_looping": false
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
       }
     }
   },
   "order": [
+    "1630529301e13f132b",
     "main",
     "product-recommendations"
   ]
