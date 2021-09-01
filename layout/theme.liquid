@@ -143,6 +143,8 @@
         unavailable: `{{ 'products.product.unavailable' | t }}`,
       }
     </script>
+    {% comment %}Klaviyo web tracking for viewed product{% endcomment %}
+    {% if page.template_suffix == 'product' %}
     <script type="text/javascript">
       var _learnq = _learnq || [];
 
@@ -171,6 +173,7 @@
         }
       }]);
     </script>
+    {% endif %}
     
     
   </body>
