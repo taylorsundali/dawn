@@ -314,6 +314,20 @@
   <script>
     var _learnq = _learnq || [];
     if ('{{ customer.email }}') {
+        var _learnq = _learnq || [];
+        var item = {
+        "ProductName": "Winnie the Pooh",
+        "ProductID": "1111",
+        "SKU": "WINNIEPOOH",
+        "Categories": ["Fiction", "Children"],
+        "ImageURL": "http://www.example.com/path/to/product/image.png",
+        "URL": "http://www.example.com/path/to/product",
+        "Brand": "Kids Books",
+        "Price": 9.99,
+        "CompareAtPrice": 14.99
+        };
+
+        _learnq.push(["track", "Viewed Product", item]);
         
     console.log('logged in');
     }
